@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <link rel="icon" type="image/png" href="iconoropa.png"/>
+</head>
+<body background="logoropa.jpg" style="background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <h1 align="center" style="color: rgb(134, 65, 8)">Tienda de ropa online</h1>
+    <form action="" method="post" enctype="text/plain">
+        <fieldset style="color: rgb(59, 0, 0);">
+            <legend align="center"> <b>Información del cliente</b> </legend>
+            
+                
+            <label for="nombre" id="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required><br><br>
+            
+            <label for="usuario" id="usuario">Nombre de Usuario:</label><br>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" ><br><br>
+           
+            <label for="apellidop" id="apellidop">Apellido Paterno:</label><br>
+            <input type="text" name="apellidop" id="apellidop" placeholder="Apellido paterno" required><br><br>
+               
+            <label for="apellidom" id="apellidom">Apellido Materno:</label><br>
+            <input type="text" name="apellidom" id="apellidom" placeholder="Apellido Materno" required><br><br>
+            
+            <label for="contra" id="contra">Contraseña:</label><br>
+            <input type="password" name="contra" id="contra" placeholder="Contraseña"><br><br>
+        </fieldset>
+
+        <fieldset style="color: rgb(59, 0, 0);">
+            <legend align="center"> <b>Datos de facturación</b></legend>
+            <label for="calle" id="calle">Calle:</label><br>
+            <input type="text" name="calle" id="calle" placeholder="Calle"><br><br>
+
+            <label for="correo" id="correo">Correo electrónico:</label><br>
+            <input type="email" name="correo" id="correo" placeholder="e-mail" required><br><br>
+
+            <label for="fecha" id="fecha">Fecha de la venta:</label>
+            <input type="datetime-local" name="fecha" id="fecha"><br><br>
+
+            <label for="numext" id="numext">Número Exterior:</label><br>
+            <input type="number" name="numext" id="numext" placeholder="Num. Exterior"><br><br>
+
+            <label for="codigop" id="codigop">Código Postal:</label><br>
+            <input type="text" name="codigop" id="codigop" placeholder="C.P."><br><br>
+
+            <label for="colonia" id="colonia">Colonia:</label><br>
+            <input type="text" name="colonia" id="colonia" placeholder="Colonia"><br><br>
+
+            <label for="rfc" id="rfc">RFC:</label><br>
+            <input type="text" name="rfc" id="rfc" placeholder="RFC:" required><br><br>
+
+        </fieldset>
+
+        <fieldset style="color: rgb(59, 0, 0);">
+            <legend align="center"> <b>Datos del artículo adquirido</b> </legend>
+            <label for="tipo" id="tipo" align="center">Tipo</label><br>
+            <select name="tipo" id="tipo" size="5">
+                <optgroup>
+                    <option>Vestido</option>
+                    <option>Falda</option>
+                    <option>Pantalón</option>
+                    <option>Playera</option>
+                    <option selected>Camisa</option>
+                    <option>Camiseta</option>
+                    <option>Shorts</option>
+                    <option>Gorras</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="talla">Talla</label><br>
+            <input type="radio" name="talla" id="talla" value="Chico">
+            <label for="talla">Chico</label><br>
+            <input type="radio" name="talla" id="talla" value="Mediano">
+            <label for="talla">Mediano</label><br>
+            <input type="radio" name="talla" id="talla" value="Grande">
+            <label for="talla">Grande</label><br><br>
+
+            <label for="colorsel">Selecciona el Color</label><br>
+            <input type="color" name="colorsel" id="colorsel"><br><br>
+
+            <input type="submit" name="enviar" id="enviar" value="Enviar Datos">
+            <input type="reset" name="borrar" id="borrar"  value="Borrar Datos">
+        </fieldset>
+    </form>
+    <h4 align="right">
+        &copy;Distribuidora de ropa en línea 2023.
+    </h4>
+</body>
+</html>
