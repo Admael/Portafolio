@@ -1,0 +1,117 @@
+body{
+    background-image: linear-gradient(90deg,#88e4f5,#7c1616 );
+}
+h1,#contratar{
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, rgb(22, 6, 90), rgb(177, 23, 23));
+    text-align: center;
+    font-family: fantasy;
+
+}
+.centrar {
+	margin: 0 auto;
+	width: 75%;
+	text-align: center;
+    
+}
+
+h2, h3, h4 {
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+}
+h2,h3{
+    color: #5f215f;
+    background-image:linear-gradient();
+    font-family: fantasy;
+    letter-spacing: 2px;
+    animation: changes 3s infinite;
+}
+@keyframes changes {
+    0% {
+      color: rgb(133, 39, 39);
+    }
+    50% {
+      color: rgb(44, 44, 105);
+    }
+    100% {
+      color: rgb(56, 16, 49);
+    }
+  }
+label {
+	font-family: 'Arial', sans-serif;
+}
+
+select, input[type="text"], input[type="checkbox"], input[type="radio"] {
+	font-family: 'Arial', sans-serif;
+}
+
+.buttons {
+	text-align: center;
+	margin-top: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+	padding: 10px 20px;
+	background-image: radial-gradient(circle,rgb(255, 0, 149),rgb(75, 75, 216));
+	color: rgb(255, 174, 174);
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	margin-right: 10px;
+    font-weight:600;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background-image: radial-gradient(circle,rgb(146, 19, 93),rgb(216, 75, 204));
+    color: rgb(217, 182, 233);
+    font-family: fantasy;
+    letter-spacing: 2px;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+input[type="text"], select {
+	padding: 8px 16px;
+	margin: 4px 0;
+	box-sizing: border-box;
+	border: 2px solid #c0167f;
+	border-radius: 4px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin: 6px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin-right: 12px;
+}
+
+input[type="radio"]:checked + label, input[type="checkbox"]:checked + label {
+	font-weight: bold;
+}
+#tabla1,#tabla2,#tabla3{
+
+    padding: 20px;
+    table-layout: auto;
+    width: 75%;
+}
+input[type="text"]:hover,select{
+    border: rgb(42, 79, 128) 3px solid;
+}
+fieldset{
+    border-color: rgba(82, 19, 76, 0.548);
+    border-radius: 40px;
+    text-align: center;  
+}
+#sub{
+    font-family: fantasy;
+    border-spacing: 20px;
+    font-size: 18px;
+}
+legend{
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+tr{
+    height: 40px;
+}

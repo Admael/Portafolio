@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Práctica 5</title>
+	<link rel="stylesheet" type="text/css" href="practica5.css">
+</head>
+<body>
+    <h1>
+        Servicios de Telefonía e Internet
+    </h1>
+    <h2 id="contratar">Contratación de servicios</h2>
+	<form>
+        <fieldset>
+            <legend id="lg1">Datos del cliente</legend>
+            <table class="centrar" id="tabla1">
+                <tr>
+                    <td colspan="2" id="altura"><label for="datos" id="sub">Seleccionee el servicio que desea contratar*</label></td>
+                </tr>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" id="nombre" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="apellidoPaterno">Apellido Paterno</label></td>
+                    <td><input type="text" id="apellidoPaterno" name="apellidoPaterno" required></td>
+                </tr>
+                <tr>
+                    <td><label for="apellidoMaterno">Apellido Materno</label></td>
+                    <td><input type="text" id="apellidoMaterno" name="apellidoMaterno" required></td>
+                </tr>
+                <tr>
+                    <td><label for="ciudad">Ciudad</label></td>
+                    <td>
+                        <select id="ciudad" name="ciudad" required>
+                            <option value="">Seleccione una ciudad</option>
+                            <option value="ags">Aguascalientes</option>
+                            <option value="bc">Baja California</option>
+                            <option value="bcs">Baja California Sur</option>
+                            <option value="camp">Campeche</option>
+                            <option value="coah">Coahuila</option>
+                            <option value="col">Colima</option>
+                            <option value="Chis">Chiapas</option>
+                            <option value="Chih">Chihuahua</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="dgo">Durango</option>
+                            <option value="gto">Guanajuato</option>
+                            <option value="gro">Guerrero</option>
+                            <option value="hgo">Hidalgo</option>
+                            <option value="jal">Jalisco</option>
+                            <option value="mx">México</option>
+                            <option value="mich">Michoacan</option>
+                            <option value="mor">Morelia</option>
+                            <option value="nay">Nayarit</option>
+                            <option value="NL">Nuevo León</option>
+                            <option value="oax">Oaxaca</option>
+                            <option value="pue">Puebla</option>
+                            <option value="qro">Queretaro</option>
+                            <option value="qr">Quintana Roo</option>
+                            <option value="slp">San Luis Potosí</option>
+                            <option value="sin">Sinaloa</option>
+                            <option value="son">Sonora</option>
+                            <option value="tab">Tabasco</option>
+                            <option value="tams">Tamaulipas</option>
+                            <option value="tlax">Tlaxcala</option>
+                            <option value="ver">Veracruz</option>
+                            <option value="yuc">Yucatán</option>
+                            <option value="zac">Zacatecas</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+		<fieldset>
+            <legend id="lg2">Servicio a contratar</legend>
+            <table class="centrar" id="tabla2">
+    
+                <tr>
+                    <td colspan="2" id="altura"><label id="sub">Seleccione el servicio que desea contratar*</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="servicio1" name="servicio1" checked>
+                        <label for="servicio1">Telefonía</label>
+                    </td>
+                    <td><input type="checkbox" id="servicio2" name="servicio2" checked>
+                        <label for="servicio2">Internet</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <table class="centrar" id="tabla3">
+                <legend id="lg3">Forma de pago</legend>
+                <tr>
+                    <td colspan="3" id="altura"><label id="sub">Elige una forma de pago*</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="debito" name="pago" value="debito" checked>
+                        <label for="debito">Tarjeta Débito</label></td>
+                    <td><input type="radio" id="credito" name="pago" value="credito">
+                        <label for="credito">Tarjeta Crédito</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="efectivo" name="pago" value="efectivo">
+                        <label for="efectivo">Dinero en efectivo</label></td>
+                    <td><input type="radio" id="cheque" name="pago" value="cheque">
+                        <label for="cheque">Cheque bancario</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="OX" name="pago" value="OX">
+                        <label for="OX">Pago OXXO</label></td>
+                    <td><input type="radio" id="transfer" name="pago" value="transfer">
+                        <label for="transfer">Transferencia Bancaria</label></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="buttons">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Restablecer">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+	</form>
+    <h2>Práctica 5</h2>
+	<h3>HTML y CSS</h3>
+	<h3>Primavera 2023</h3>
+</body>
+</html>
