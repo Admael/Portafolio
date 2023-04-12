@@ -1,0 +1,77 @@
+*{
+    background-color: bisque;
+}
+p{
+    padding: 7px;
+    font-family: cursive;
+    text-align: center;
+}
+p.dotted{
+    border: 1px solid black;
+    outline-style: dotted;
+    outline-color: salmon;
+    outline-width: thick;
+}
+p.dashed{
+    border: 1px solid black;
+    outline-style: dashed;
+    outline-color: brown;
+    outline-width: thick;
+}
+p.solid{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: aqua;
+    outline-width: medium;
+}
+p.double{
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: rgb(255, 0, 212);
+    outline-width: medium;
+}
+p.groove{
+    border: 1px solid black;
+    outline-style: groove;
+    outline-color: rgb(255, 136, 0);
+    outline-width: thin;
+}
+p.ridge{
+    border: 1px solid black;
+    outline-style: ridge;
+    outline-color: rgb(255, 0, 55);
+    outline-width: thin;
+}
+p.inset{
+    border: 1px solid black;
+    outline-style: inset;
+    outline-color: rgb(204, 21, 164);
+    outline-width: 5px;
+}
+p.outset{
+    border: 1px solid black;
+    outline-style: outset;
+    outline-color: rgb(238, 24, 106);
+    outline-width: 6px;
+}
+p.none{
+    border: 1px solid black;
+    outline-style: none;
+    outline-color: rgb(255, 51, 0);
+}
+p.hidden{
+    border: 1px solid black;
+    outline-style: hidden;
+    outline-color: rgb(0, 60, 255);
+}
+p.outline{
+    border: 1px solid black;
+    outline: thick dotted rgb(179, 43, 65);
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: coral;
+    text-shadow: black 2px 2px 4px;
+}
