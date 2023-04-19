@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1 Parcial3</title>
+    <script src="Practica1P3JS.js"></script>
+    <style>
+        input{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgba(28, 26, 143, 0.589);
+            border-radius: 10px;
+            width: 100%;
+            letter-spacing: 2px;
+            color: beige;
+            font-size: bold;
+        }
+        input:hover{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgba(95, 93, 214, 0.589);
+            border-radius: 10px;
+            width: 100%;
+            letter-spacing: 2px;
+            color: beige;
+            font-size: bold;
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+            color: rgb(180, 161, 52);
+            text-shadow: 2px 2px 20px black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Operaciones matemáticas</h1>
+    <form method="post" enctype="text/plain">
+        <input type="button" value="Suma de números" name="sumar" onclick="suma()"/>
+        <input type="button" value="Resta de números" name="resta" onclick="restar()"/>
+        <input type="button" value="Producto de números" name="producto" onclick="multiplicar()"/>
+        <input type="button" value="División de números" name="division" onclick="dividir()"/>
+        <input type="button" value="¿Positivo o Negativo?" name="comparacion" onclick="mayoromenor()"/>
+    </form>
+</body>
+</html>
