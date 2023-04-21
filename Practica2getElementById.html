@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2</title>
+    <script src="Practica2.js"></script>
+    <style>
+            input{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: rgba(90, 14, 233, 0.589);
+            border-radius: 10px;
+            width: 100%;
+            letter-spacing: 2px;
+            color: beige;
+            font-size: bold;
+        }
+        label{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 100%;
+            letter-spacing: 2px;
+            color: rgb(14, 14, 12);
+            font-size: bold;
+            font-family: fantasy;
+        }
+        input:hover{
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgba(147, 154, 185, 0.589);
+            border-radius: 10px;
+            width: 100%;
+            letter-spacing: 2px;
+            color: beige;
+            font-size: bold;
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+            letter-spacing: 3px;
+            color: rgb(180, 88, 52);
+            text-shadow: 2px 2px 20px black;
+        }
+        #num1:hover,#num2:hover{
+            cursor: text;
+            color: rgb(84, 62, 88);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de getElementById</h1>
+        <form action="" method="post" enctype="text/plain">
+            <label for="numero1" id="lab1">Número 1</label>
+            <input type="text" name="num1" id="num1">
+            <label for="numero2" id="lab2">Número 2</label>
+            <input type="text" name="num2" id="num2"><br>
+            <input type="button" value="Suma" name="boton" id="suma" onclick="suma()"> 
+            <input type="button" value="Resta" name="boton" id="resta" onclick="resta()"> 
+            <input type="button" value="División" name="boton" id="divi" onclick="division()"> 
+            <input type="button" value="Multiplicación" name="boton" id="mult" onclick="multiplicacion()"> 
+        </form>
+</body>
+</html>
