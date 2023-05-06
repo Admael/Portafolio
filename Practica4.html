@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4</title>
+    <style>
+        body{
+        background: rgb(174,238,202);
+        background: radial-gradient(circle, rgba(174,238,202,0.6699054621848739) 7%, rgba(96,57,167,0.47102591036414565) 83%);
+        }
+        div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+        font-weight: bold ;
+        color: rgb(9, 84, 97);
+        }
+        h1{
+            text-align: center;
+            color: rgb(45, 95, 101);
+        }
+        #boton{
+            margin: auto;
+            color: rgb(58, 15, 15);
+            font-size: 16px;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-left: 20px;
+            transition: 0.5s ease-in-out;
+        }
+        #boton:hover{
+            margin: auto;
+            color: rgb(20, 15, 52);
+            background-color: rgb(1, 148, 99);
+            font-size: 16px;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            width: 100%;
+            font-weight: bold;
+        }
+    </style>
+    <script src="Practica4.js"></script>
+</head>
+<body>
+    <h1>Consulta tu RFC</h1>
+    <div>
+        <form action="" method="post" enctype="text/plain">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre"><br><br>
+            <label for="ap">Apellido Paterno</label><br>
+            <input type="text" name="ap" id="ap"><br><br>
+            <label for="am">Apellido materno</label><br>
+            <input type="text" name="am" id="am"><br><br>
+            <label for="anio">Año de nacimiento</label><br>
+            <input type="text" name="anio" id="anio"><br><br>
+            <label for="mes">Mes de nacimiento</label><br>
+            <input type="text" name="mes" id="mes"><br><br>
+            <label for="dia">Día de nacimiento</label><br>
+            <input type="text" name="dia" id="dia"><br><br>
+            <label for="resul">Resultado</label><br>
+            <input type="text" name="resul" id="resul"><br><br>
+            <input type="button" name="boton" id="boton" onclick="resultado()" value="Generar RFC">
+         </form>
+    </div>
+</body>
+</html>
