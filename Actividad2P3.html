@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<link rel="stylesheet" href="Actividad2P3.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+
+<script>
+var total;
+function califica()
+    {var total=0;
+    	for (var x=1;x<=4;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==50)
+        	document.getElementById("comentario").innerHTML="¡ERES TODO UN GUARDIAN!";
+        else
+        	if(total==40)
+        	document.getElementById("comentario").innerHTML="¡A SOLO UN PASO DE SER UN GUARDIAN!";
+        else
+        	if(total==30)
+        	document.getElementById("comentario").innerHTML="¡VUELA UN POCO MÁS Y SERÁS UN GUARDIAN!";
+		else
+        	if(total==20)
+        	document.getElementById("comentario").innerHTML="¡TE FALTA PRÁCTICA!";
+		else
+        	if(total==10)
+        	document.getElementById("comentario").innerHTML="¡PARECES MÁS UN DEVASTADOR!";
+		else
+        	if(total==0)
+        	document.getElementById("comentario").innerHTML="¡ESTAS FUERA DE ÓRBITA, DEBERÍAS CONOCERNOS!";
+    }
+function generar()
+	{
+		//Crear un objeto o instancia jsPDF
+		var doc= new jsPDF();
+		doc.setTextColor(158, 26, 168); //Color formato RGB
+		doc.setFontSize(25);
+		doc.text(5,35,"Sin importar tu resultado, \r recuerda que cualquiera tiene el corazón \r para ser un guardian"); //Ubicación y texto
+		doc.setTextColor(164, 58, 23);
+		doc.setFontSize(20);
+		doc.text(15,70,"50 Puntos Excelente. \r ¡ERES TODO UN GUARDIAN!");
+		doc.text(15,90,"40 Puntos Bien. \r ¡A SOLO UN PASO DE SER UN GUARDIAN!");
+		doc.text(15,110,"30 Puntos Regular. \r ¡VUELA UN POCO MÁS Y SERÁS UN GUARDIAN!");
+		doc.text(15,130,"20 Puntos Un poco Mal. \r ¡TE FALTA PRÁCTICA!");
+		doc.text(15,150,"10 Puntos Mal. \r ¡PARECES MÁS UN DEVASTADOR!");
+		doc.text(15,170,"0 Puntos Pésimo. \r ¡ESTAS FUERA DE ÓRBITA, DEBERÍAS CONOCERNOS!");
+		var string=doc.output('datauristring');
+		$('iframe').attr('src',string);
+	}
+</script>
+
+<body>
+    <div id="contiene" class="contenedor">
+	<h1>¿Qué tanto sabes de?</h1>
+	<img src="gofg.png" alt=""><br><br><br><br>
+<form>
+	<div class="subcontenedor">
+		<ul>
+
+			<li>¿Cuál es el nombre de Star-Lord?</li>
+			<input type="radio" name="r1" id="r1" value="0"/>Peter Parker<br/>
+			<input type="radio" name="r1" id="r1" value="10"/>Peter Quill<br/>
+			<input type="radio" name="r1" id="r1" value="0"/>Peter Quinn<br/>
+			<input type="radio" name="r1" id="r1" value="0"/>David Bowie<br/>
+			
+			<li>¿Quién es el mejor amigo de Groot?</li>
+			<input type="radio" name="r2" id="r2" value="0"/>Drax<br/>
+			<input type="radio" name="r2" id="r2" value="10"/>Rocket Racoon<br/>
+			<input type="radio" name="r2" id="r2" value="0"/>Gamora<br/>
+			<input type="radio" name="r2" id="r2" value="0"/>Nebula<br/>
+
+			<li>¿Cómo se llama la nave de los Guardianes?</li>
+			<input type="radio" name="r3" id="r3" value="0"/>StarLord<br/>
+			<input type="radio" name="r3" id="r3" value="0"/>StarShip<br/>
+			<input type="radio" name="r3" id="r3" value="10"/>Milano<br/>
+			<input type="radio" name="r3" id="r3" value="0"/>Nowhere<br/>
+
+			<li>¿Quién es Gamora?</li>
+			<input type="radio" name="r4" id="r4" value="0"/>La hermana de Shrek<br/>
+			<input type="radio" name="r4" id="r4" value="0"/>Miembro de los Vengadores<br/>
+			<input type="radio" name="r4" id="r4" value="0"/>La protectora suprema del universo<br/>
+			<input type="radio" name="r4" id="r4" value="10"/>La hija adoptiva del titan loco "Thanos"<br/>
+			
+			<li>¿Cuál es el "apodo" con el que se le conoce a Drax?</li>
+			<input type="radio" name="r5" id="r5" value="0"/>Drax el "acusador"<br/>
+			<input type="radio" name="r5" id="r5" value="0"/>Drax el "temerario"<br/>
+			<input type="radio" name="r5" id="r5" value="10"/>Drax el "destructor"<br/>
+			<input type="radio" name="r5" id="r5" value="0"/>Drax el "legendario forajido"<br/>
+		</ul>
+		
+	</div>
+	<input type="button" value="Calificar" onclick="califica()" class="botonsito">
+	<input type="button" value="Generar PDF" onclick="generar()" class="botonsito">
+
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
